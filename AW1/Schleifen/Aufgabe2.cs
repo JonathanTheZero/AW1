@@ -34,5 +34,14 @@ namespace AW1.Schleifen
 
             Console.WriteLine($"Max: {vals.Max()}\n Min:{vals.Min()}");
         }
+
+        public void Task4()
+        {
+            List<double> vals = new List<double>();
+            for (double i = -1; i != 0; i = Convert.ToDouble(Console.ReadLine()))
+                vals.Add(i);
+
+            Console.WriteLine($"Durchschnitt: {vals.Average()}");
+        }
     }
 }

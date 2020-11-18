@@ -12,7 +12,7 @@ namespace AW1
         public static void Main(string[] args)
         {
             //new Aufgabe2().Task2();
-            new Aufgabe2().Task3();
+            new Aufgabe2().Task4();
 
             Console.ReadKey();
         }
