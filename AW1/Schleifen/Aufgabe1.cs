@@ -7,6 +7,7 @@ namespace AW1.Schleifen
         public void Task1()
         {
             float monatseinnahmen = 0.0f;
+
             for (int i = 0; i < 31; ++i)
                 monatseinnahmen += Convert.ToSingle(Console.ReadKey());
         }
@@ -14,6 +15,7 @@ namespace AW1.Schleifen
         public void Task2()
         {
             int i = -1;
+
             while (++i < 52)
             {
                 float lottogewinn = Convert.ToSingle(Console.ReadLine());
@@ -26,6 +28,7 @@ namespace AW1.Schleifen
             int zahl = Convert.ToInt16(Console.ReadLine());
             bool primzahl = true;
             int i = zahl - 1;
+
             while (i > 1)
             {
                 if (zahl % i == 0)
