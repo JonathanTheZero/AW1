@@ -1,8 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace AW1.Schleifen
 {
@@ -10,10 +8,11 @@ namespace AW1.Schleifen
     {
         public void Task1()
         {
-            double sum = 0;
-
+            decimal sum = 0;
             while (sum < 20000)
-                sum += Convert.ToDouble(Console.ReadLine());
+                sum += Convert.ToDecimal(Console.ReadLine());
+
+            Console.WriteLine($"Gesamtsumme: {sum}");
         }
 
         public void Task2()
@@ -46,6 +45,11 @@ namespace AW1.Schleifen
                 vals.Add(i);
 
             Console.WriteLine($"Durchschnitt: {vals.Average()}");
+
+            //double sum = 0;
+            //for (int i = 0; i < vals.Count; ++i) 
+            //    sum += vals[i];
+            //double avg = sum / vals.Count;
         }
     }
 }

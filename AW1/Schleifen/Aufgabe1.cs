@@ -25,9 +25,9 @@ namespace AW1.Schleifen
 
         public void Task3()
         {
-            int zahl = Convert.ToInt16(Console.ReadLine());
+            int zahl = Convert.ToInt16(Console.ReadLine()),
+                i = zahl - 1;
             bool primzahl = true;
-            int i = zahl - 1;
 
             while (i > 1)
             {

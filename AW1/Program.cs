@@ -1,9 +1,6 @@
-﻿using AW1.Schleifen;
+﻿using AW1.Arrays;
+using AW1.Schleifen;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace AW1
 {
@@ -12,7 +9,8 @@ namespace AW1
         public static void Main(string[] args)
         {
             //new Aufgabe2().Task2();
-            new Aufgabe2().Task4();
+            //new Aufgabe2().Task4();
+            new AB5().Task1();
 
             Console.ReadKey();
         }
