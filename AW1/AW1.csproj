@@ -44,10 +44,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Arrays\AB5.cs" />
+    <Compile Include="Arrays\AM MD arrays.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Schleifen\Aufgabe1.cs" />
     <Compile Include="Schleifen\Aufgabe2.cs" />
+    <Compile Include="Utils.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

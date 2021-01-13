@@ -3,11 +3,9 @@ using System.Linq;
 
 namespace AW1.Arrays
 {
-    class AB5
+    static class AB5
     {
-        public AB5() { }
-
-        public void Task1()
+        public static void Task1()
         {
             int[] preis = new int[20];
             preis[0] = 20;
