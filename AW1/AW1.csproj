@@ -45,6 +45,7 @@
   <ItemGroup>
     <Compile Include="Arrays\AB5.cs" />
     <Compile Include="Arrays\AM MD arrays.cs" />
+    <Compile Include="Funktionen\ABFunktionen.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Schleifen\Aufgabe1.cs" />
@@ -54,5 +55,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
