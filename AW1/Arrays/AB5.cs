@@ -11,6 +11,8 @@ namespace AW1.Arrays
             preis[0] = 20;
             preis[1] = 29;
             preis[2] = 135;
+            Console.WriteLine("Preis eingeben:");
+
             for (int i = 3; i < preis.Length; ++i)
                 preis[i] = Convert.ToInt32(Console.ReadLine());
 

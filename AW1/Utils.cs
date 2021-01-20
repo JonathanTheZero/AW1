@@ -1,22 +1,16 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace AW1
+﻿namespace AW1
 {
-    class Utils    {    }
+    public static class Utils { }
 
     public enum Subtask
     {
-        A,
-        B, 
-        C, 
-        D,
-        E,
-        F,
-        G,
-        H
+        A = 'a',
+        B = 'b',
+        C = 'c',
+        D = 'd',
+        E = 'e',
+        F = 'f',
+        G = 'g',
+        H = 'h'
     }
 }

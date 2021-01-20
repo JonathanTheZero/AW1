@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 
 namespace AW1.Funktionen
 {
@@ -43,7 +44,7 @@ namespace AW1.Funktionen
         #region Task2
         public static void Task2()
         {
-            string fx = "x^2 + 3x - 5";
+            //string fx = "x^2 + 3x - 5";
             var res = PQ(3, -5);
             Console.WriteLine($"{res[0]}, {res[1]}");
         }
@@ -63,7 +64,8 @@ namespace AW1.Funktionen
         #region Task3
         public static void Task3()
         {
-            generatePrimes(200);
+            //Array.ForEach(generatePrimes(200), Console.WriteLine);
+            Console.WriteLine(string.Join(", ", generatePrimes(200)));
         }
 
         private static int[] generatePrimes(int maxValue)
@@ -76,9 +78,7 @@ namespace AW1.Funktionen
 
             // how many primes are there?
             int[] primes = new int[PrimesAmount(f)];
-            for (int i = 0, j = 0; i < s; i++)
-                if (f[i]) 
-                    primes[j++] = i;
+            FillArray(primes, f, s);
 
             return primes;
         }
@@ -97,6 +97,13 @@ namespace AW1.Funktionen
             for (int i = 0; i < s; i++)
                 f[i] = true;  // initialize array
             return f;
+        }
+
+        private static void FillArray(int[] p, bool[] f, int s)
+        {
+            for (int i = 0, j = 0; i < s; i++)
+                if (f[i]) 
+                    p[j++] = i;
         }
 
         private static void FillPrimeArray(bool[] f)
