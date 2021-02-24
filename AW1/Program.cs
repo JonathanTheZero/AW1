@@ -1,5 +1,6 @@
 ﻿using AW1.Arrays;
 using AW1.Funktionen;
+using AW1.Referenzen;
 using System;
 
 namespace AW1
@@ -22,18 +23,22 @@ namespace AW1
                 else if (code[0] == 'a')
                 {
                     if (code[1] == '5') AB5.Task1();
-                    if (code[1] == 'm')
+                    else if (code[1] == 'm')
                     {
                         if (code[2] == '1') ABMDArrays.Task1();
-                        if (code[2] == '2')
+                        else if (code[2] == '2')
                         {
-                            if (code[3] == 'a') ABMDArrays.Task2(Subtask.A);
-                            if (code[3] == 'b') ABMDArrays.Task2(Subtask.B);
+                            if (code[3] == 'a')
+                                ABMDArrays.Task2(Subtask.A);
+                            else if (code[3] == 'b')
+                                ABMDArrays.Task2(Subtask.B);
                         }
-                        if (code[2] == '3')
+                        else if (code[2] == '3')
                         {
-                            if (code[3] == 'a') ABMDArrays.Task3(Subtask.A);
-                            if (code[3] == 'b') ABMDArrays.Task3(Subtask.B);
+                            if (code[3] == 'a')
+                                ABMDArrays.Task3(Subtask.A);
+                            else if (code[3] == 'b')
+                                ABMDArrays.Task3(Subtask.B);
                         }
                     }
                 }
@@ -42,17 +47,17 @@ namespace AW1
                     if (code[1] == 'a')
                     {
                         if (code[2] == '1') ABFunktionen.Task1();
-                        if (code[2] == '2') ABFunktionen.Task2();
-                        if (code[2] == '3') ABFunktionen.Task3();
+                        else if (code[2] == '2') ABFunktionen.Task2();
+                        else if (code[2] == '3') ABFunktionen.Task3();
                     }
-                    if (code[1] == 'f')
+                    else if (code[1] == 'f')
                     {
                         Console.WriteLine("Bitte geben Sie einen Wert für n ein");
                         int n = Convert.ToInt32(Console.ReadLine());
                         if (code[2] == 'i') Console.WriteLine(Fakultät.Iterative(n));
-                        if (code[2] == 'r') Console.WriteLine(Fakultät.Recursive(n));
+                        else if (code[2] == 'r') Console.WriteLine(Fakultät.Recursive(n));
                     }
-                    if (code[1] == 'r')
+                    else if (code[1] == 'r')
                     {
                         if (code[2] == '1')
                         {
@@ -66,9 +71,15 @@ namespace AW1
                             }
                             Recursive.Task1((Subtask)code[3], a, b);
                         }
-                        if (code[2] == '2') Recursive.Task2((Subtask)code[3]);
+                        else if (code[2] == '2') Recursive.Task2((Subtask)code[3]);
+                        else if (code[2] == '3') Recursive.Task3();
                     }
                 }
+                else if (code[0] == 'r')
+                {
+                    if (code[1] == 's') Semantik.TaskA();
+                }
+                Console.WriteLine();
             }
         }
     }
