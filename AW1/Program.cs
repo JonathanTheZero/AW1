@@ -103,6 +103,7 @@ namespace AW1
                         else if (code[2] == 'c') Structs.TaskC();
                         else if (code[2] == 'd') Structs.TaskD();
                         else if (code[2] == 'e') Structs.TaskE();
+                        else if (code[2] == 'f') Structs.TaskF();
                     }
                 }
                 Console.WriteLine();

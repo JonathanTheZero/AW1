@@ -7,9 +7,9 @@ namespace AW1.Referenzen
     {
         public static void TaskB()
         {
-            Rechnung r;
+            Rechnung r = new Rechnung();
             r.Bestelldatum = "15.02.2021";
-            r.Kundennummer = 12312;
+            r.Kunde.Kundennummer = 12312;
             r.Nettopreis = 5000;
             r.Rechnungsnummer = 120;
             DruckeRechnung(r);
@@ -68,6 +68,33 @@ namespace AW1.Referenzen
             }
         }
 
+        public static void TaskF()
+        {
+            Rechnung r;
+            r.Kunde.Kundennummer = 10;
+            r.Kunde.Nachname = "Schmidt";
+            r.Kunde.Vorname = "Peter";
+            r.Kunde.Adresse.Hausnummer = 10;
+            r.Kunde.Adresse.Plz = 45123;
+            r.Kunde.Adresse.Stadt = "Essen";
+            r.Kunde.Adresse.Straße = "Hauptstraße";
+            r.Nettopreis = 5200;
+            r.Rechnungsnummer = 17;
+            r.Bestelldatum = "17.02.2021";
+            Console.WriteLine($"Bestelldatum:       {r.Bestelldatum}");
+            Console.WriteLine($"Rechnungsnummer:    {r.Rechnungsnummer}");
+            Console.WriteLine($"Nettopreis:         {r.Nettopreis}");
+            Console.WriteLine($"Kunde:");
+            Console.WriteLine($"    Vorname:        {r.Kunde.Vorname}");
+            Console.WriteLine($"    Nachname:       {r.Kunde.Nachname}");
+            Console.WriteLine($"    Kundennummer:   {r.Kunde.Kundennummer}");
+            Console.WriteLine($"    Adresse:");
+            Console.WriteLine($"        Straße:     {r.Kunde.Adresse.Straße}");
+            Console.WriteLine($"        Hausnummer: {r.Kunde.Adresse.Hausnummer}");
+            Console.WriteLine($"        PLZ:        {r.Kunde.Adresse.Plz}");
+            Console.WriteLine($"        Stadt:      {r.Kunde.Adresse.Stadt}");
+        }
+
         private static void DruckeRechnung(Rechnung r)
         {
             Console.WriteLine($"Bestelldatum:       {r.Bestelldatum}");
@@ -93,9 +120,9 @@ namespace AW1.Referenzen
             Random rand = new Random();
             for (int i = 0; i < re.Length; ++i)
             {
-                Rechnung r;
+                Rechnung r = new Rechnung();
                 r.Bestelldatum = (i != 9 ? "0" + (i + 1) : "10") + ".01.2021";
-                r.Kundennummer = rand.Next();
+                r.Kunde.Kundennummer = rand.Next();
                 r.Nettopreis = (decimal)(rand.NextDouble() * 10000);
                 r.Rechnungsnummer = rand.Next();
                 re[i] = r;

@@ -3,7 +3,8 @@
     public struct Rechnung
     {
         public int Rechnungsnummer;
-        public int Kundennummer;
+        public int Kundennummer => Kunde.Kundennummer;
+        public Kunde Kunde;
         public string Bestelldatum;
         public decimal Nettopreis;
     }
