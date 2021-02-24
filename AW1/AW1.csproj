@@ -50,7 +50,9 @@
     <Compile Include="Funktionen\Recursive.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Referenzen\Models\Rechnung.cs" />
     <Compile Include="Referenzen\Semantik.cs" />
+    <Compile Include="Referenzen\Structs.cs" />
     <Compile Include="Schleifen\Aufgabe1.cs" />
     <Compile Include="Schleifen\Aufgabe2.cs" />
     <Compile Include="Utils.cs" />

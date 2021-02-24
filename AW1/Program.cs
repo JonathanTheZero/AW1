@@ -1,6 +1,7 @@
 ﻿using AW1.Arrays;
 using AW1.Funktionen;
 using AW1.Referenzen;
+using AW1.Schleifen;
 using System;
 
 namespace AW1
@@ -75,9 +76,34 @@ namespace AW1
                         else if (code[2] == '3') Recursive.Task3();
                     }
                 }
+                else if(code[0] == 's')
+                {
+                    if(code[1] == '1')
+                    {
+                        Aufgabe1 a = new Aufgabe1();
+                        if (code[2] == 'a') a.Task1();
+                        else if (code[2] == 'b') a.Task2();
+                        else if (code[2] == 'c') a.Task3();
+                    }
+                    else if (code[1] == '2')
+                    {
+                        Aufgabe2 a = new Aufgabe2();
+                        if (code[2] == 'a') a.Task1();
+                        else if (code[2] == 'b') a.Task2();
+                        else if (code[2] == 'c') a.Task3();
+                        else if (code[2] == 'd') a.Task4();
+                    }
+                }
                 else if (code[0] == 'r')
                 {
-                    if (code[1] == 's') Semantik.TaskA();
+                    if (code[1] == 'e') Semantik.TaskA();
+                    else if(code[1] == 's')
+                    {
+                        if (code[2] == 'b') Structs.TaskB();
+                        else if (code[2] == 'c') Structs.TaskC();
+                        else if (code[2] == 'd') Structs.TaskD();
+                        else if (code[2] == 'e') Structs.TaskE();
+                    }
                 }
                 Console.WriteLine();
             }

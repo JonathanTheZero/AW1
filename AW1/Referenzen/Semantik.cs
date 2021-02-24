@@ -11,7 +11,7 @@ namespace AW1.Referenzen
             for (int i = 0; i < squares.Length; ++i)
             {
                 double d = squares[i];
-                Console.WriteLine($"double d = {d}");
+                Console.WriteLine($"Vor Square Aufruf: double d = {d}");
                 Square(ref d);
                 Console.WriteLine($"Nach Square Aufruf: double d = {d}");
                 Console.WriteLine("-------------");

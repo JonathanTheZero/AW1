@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace AW1.Funktionen
 {
-    public class Fakultät
+    public static class Fakultät
     {
         public static long Iterative(int n)
         {
