@@ -8,4 +8,12 @@
         public string Bestelldatum;
         public decimal Nettopreis;
     }
+
+    public struct _Rechnung
+    {
+        public int Rechnungsnummer;
+        public int Kundennummer;
+        public string Bestelldatum;
+        public decimal Nettopreis;
+    }
 }

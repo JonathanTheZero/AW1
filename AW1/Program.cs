@@ -105,6 +105,11 @@ namespace AW1
                         else if (code[2] == 'e') Structs.TaskE();
                         else if (code[2] == 'f') Structs.TaskF();
                     }
+                    else if(code[1] == 'l')
+                    {
+                        if (code[2] == 'a') LineareSuche.TaskA();
+                        else if (code[2] == 'b') LineareSuche.TaskC();
+                    }
                 }
                 Console.WriteLine();
             }

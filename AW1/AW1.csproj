@@ -50,6 +50,7 @@
     <Compile Include="Funktionen\Recursive.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Referenzen\LineareSuche.cs" />
     <Compile Include="Referenzen\Models\Adresse.cs" />
     <Compile Include="Referenzen\Models\Kunde.cs" />
     <Compile Include="Referenzen\Models\Rechnung.cs" />
