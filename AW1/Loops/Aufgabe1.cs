@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace AW1.Schleifen
+namespace AW1.Loops
 {
     class Aufgabe1
     {

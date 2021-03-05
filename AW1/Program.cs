@@ -1,7 +1,8 @@
 ﻿using AW1.Arrays;
 using AW1.Funktionen;
+using AW1.Loops;
 using AW1.Referenzen;
-using AW1.Schleifen;
+using AW1.Suchen;
 using System;
 
 namespace AW1
@@ -76,9 +77,9 @@ namespace AW1
                         else if (code[2] == '3') Recursive.Task3();
                     }
                 }
-                else if(code[0] == 's')
+                else if (code[0] == 'l')
                 {
-                    if(code[1] == '1')
+                    if (code[1] == '1')
                     {
                         Aufgabe1 a = new Aufgabe1();
                         if (code[2] == 'a') a.Task1();
@@ -97,7 +98,7 @@ namespace AW1
                 else if (code[0] == 'r')
                 {
                     if (code[1] == 'e') Semantik.TaskA();
-                    else if(code[1] == 's')
+                    else if (code[1] == 's')
                     {
                         if (code[2] == 'b') Structs.TaskB();
                         else if (code[2] == 'c') Structs.TaskC();
@@ -105,10 +106,18 @@ namespace AW1
                         else if (code[2] == 'e') Structs.TaskE();
                         else if (code[2] == 'f') Structs.TaskF();
                     }
-                    else if(code[1] == 'l')
+                }
+                else if (code[0] == 's')
+                {
+                    if (code[1] == 'l')
                     {
-                        if (code[2] == 'a') LineareSuche.TaskA();
-                        else if (code[2] == 'b') LineareSuche.TaskC();
+                        if (code[2] == 'a') LinearSearch.TaskA();
+                        else if (code[2] == 'c') LinearSearch.TaskC();
+                    }
+                    else if(code[1] == 'b')
+                    {
+                        if (code[2] == 'b') BinarySearch.TaskB();
+                        else if (code[2] == 'c') BinarySearch.TaskC();
                     }
                 }
                 Console.WriteLine();

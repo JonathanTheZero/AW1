@@ -1,9 +1,9 @@
 ﻿using AW1.Referenzen.Models;
 using System;
 
-namespace AW1.Referenzen
+namespace AW1.Suchen
 {
-    public static class LineareSuche
+    public static class LinearSearch
     {
         public static void TaskA()
         {

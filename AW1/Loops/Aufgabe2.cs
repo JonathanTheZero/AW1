@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace AW1.Schleifen
+namespace AW1.Loops
 {
     class Aufgabe2
     {
