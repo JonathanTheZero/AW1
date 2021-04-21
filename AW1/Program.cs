@@ -115,18 +115,19 @@ namespace AW1
                         if (code[2] == 'a') LinearSearch.TaskA();
                         else if (code[2] == 'c') LinearSearch.TaskC();
                     }
-                    else if(code[1] == 'b')
+                    else if (code[1] == 'b')
                     {
                         if (code[2] == 'b') BinarySearch.TaskB();
                         else if (code[2] == 'c') BinarySearch.TaskC();
                     }
                 }
-                else if(code[0] == 'w')
+                else if (code[0] == 'w')
                 {
-                    if(code[1] == '4')
+                    if (code[1] == '4')
                     {
                         if (code[2] == 'a') Wiederholung0421.TaskA();
                         else if (code[2] == 'b') Wiederholung0421.TaskB();
+                        else if (code[2] == 'c') Wiederholung0421.TaskC();
                     }
                 }
                 Console.WriteLine();

@@ -1,9 +1,5 @@
 ﻿using AW1.Wiederholung.Model;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace AW1.Wiederholung
 {
@@ -15,7 +11,7 @@ namespace AW1.Wiederholung
         {
             bool userAdds = true;
             int added = 0;
-            while(userAdds && added < kliniken.Length)
+            while (userAdds && added < kliniken.Length)
             {
                 Console.WriteLine("Wie lautet der Name der Klinik?");
                 kliniken[added].Name = Console.ReadLine();
@@ -42,12 +38,18 @@ namespace AW1.Wiederholung
         private static int SummeBetten(Klinik[] kliniken, int minBeds)
         {
             int sum = 0;
-            foreach(Klinik k in kliniken)
+            foreach (Klinik k in kliniken)
             {
                 if (k.Intensivplaetze > minBeds)
                     sum += k.Betten;
             }
             return sum;
+        }
+
+        public static void TaskC()
+        {
+            TaskA();
+            Console.WriteLine(Bericht(kliniken, 0));
         }
 
         /**
@@ -57,8 +59,10 @@ namespace AW1.Wiederholung
          */
         private static string Bericht(Klinik[] kliniken, int i)
         {
-            return kliniken[i].Name + " hat " + kliniken[i].Betten + " Betten. \n "
-            + Bericht(kliniken, i + 1);
+            if (i >= kliniken.Length)
+                return string.Empty;
+
+            return kliniken[i].Name + " hat " + kliniken[i].Betten + " Betten. \n" + Bericht(kliniken, i + 1);
         }
     }
 }
