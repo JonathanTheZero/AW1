@@ -60,6 +60,8 @@
     <Compile Include="Loops\Aufgabe1.cs" />
     <Compile Include="Loops\Aufgabe2.cs" />
     <Compile Include="Utils.cs" />
+    <Compile Include="Wiederholung\Model\Klinik.cs" />
+    <Compile Include="Wiederholung\Wiederholung0421.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
