@@ -1,4 +1,4 @@
-﻿using AW1.Referenzen.Models;
+﻿using AW1.Models;
 using System;
 
 namespace AW1.Suchen
@@ -64,7 +64,7 @@ namespace AW1.Suchen
                 return RecursiveBinary(nettopreis, re, firstIndex, middleIndex - 1, steps + 1);
         }
 
-        private static _Rechnung[] ErzeugeZufallsRechnung3()
+        public static _Rechnung[] ErzeugeZufallsRechnung3()
         {
             _Rechnung[] re = new _Rechnung[1000];
             Random rand = new Random();
