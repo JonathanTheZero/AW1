@@ -48,6 +48,7 @@
     <Compile Include="Funktionen\ABFunktionen.cs" />
     <Compile Include="Funktionen\Fakultät.cs" />
     <Compile Include="Funktionen\Recursive.cs" />
+    <Compile Include="OOP\Immobilienverwaltung.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Sortieren\Bubblesort.cs" />
