@@ -54,6 +54,7 @@
     <Compile Include="Sortieren\Bubblesort.cs" />
     <Compile Include="Suchen\BinarySearch.cs" />
     <Compile Include="Suchen\LinearSearch.cs" />
+    <Compile Include="Wiederholung\Experten\Password.cs" />
     <Compile Include="_Models\Adresse.cs" />
     <Compile Include="_Models\Kunde.cs" />
     <Compile Include="_Models\Rechnung.cs" />

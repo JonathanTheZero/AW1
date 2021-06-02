@@ -5,6 +5,7 @@ using AW1.Referenzen;
 using AW1.Sortieren;
 using AW1.Suchen;
 using AW1.Wiederholung;
+using AW1.Wiederholung.Experten;
 using System;
 
 namespace AW1
@@ -151,6 +152,11 @@ namespace AW1
                         if (code[2] == 'a') Wiederholung0621.TaskA();
                         else if (code[2] == 'b') Wiederholung0621.TaskB();
                         else if (code[2] == 'c') Wiederholung0621.TaskC();
+                    }
+                    else if (code[1] == 'p')
+                    {
+                        if (code[2] == 'b') Password.TaskB();
+                        else if (code[2] == 'c') Password.TaskC();
                     }
                 }
                 Console.WriteLine();
