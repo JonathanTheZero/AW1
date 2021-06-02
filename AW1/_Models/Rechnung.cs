@@ -1,4 +1,4 @@
-﻿namespace AW1.Referenzen.Models
+﻿namespace AW1.Models
 {
     public struct Rechnung
     {

@@ -1,4 +1,4 @@
-﻿using AW1.Referenzen.Models;
+﻿using AW1.Models;
 using System;
 
 namespace AW1.Suchen
@@ -40,7 +40,7 @@ namespace AW1.Suchen
             return -1;
         }
 
-        private static _Rechnung[] ErzeugeZufallsRechnung2()
+        public static _Rechnung[] ErzeugeZufallsRechnung2()
         {
             _Rechnung[] re = new _Rechnung[1000];
             Random rand = new Random();

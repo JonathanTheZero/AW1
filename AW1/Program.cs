@@ -2,6 +2,7 @@
 using AW1.Funktionen;
 using AW1.Loops;
 using AW1.Referenzen;
+using AW1.Sortieren;
 using AW1.Suchen;
 using AW1.Wiederholung;
 using System;
@@ -23,6 +24,7 @@ namespace AW1
                 Console.WriteLine("Aufrufcode definieren:");
                 string code = Console.ReadLine().ToLower();
                 if (code == "exit") return;
+                //Arrays
                 else if (code[0] == 'a')
                 {
                     if (code[1] == '5') AB5.Task1();
@@ -45,6 +47,7 @@ namespace AW1
                         }
                     }
                 }
+                //Funktionen
                 else if (code[0] == 'f')
                 {
                     if (code[1] == 'a')
@@ -78,6 +81,7 @@ namespace AW1
                         else if (code[2] == '3') Recursive.Task3();
                     }
                 }
+                //Loops
                 else if (code[0] == 'l')
                 {
                     if (code[1] == '1')
@@ -96,6 +100,7 @@ namespace AW1
                         else if (code[2] == 'd') a.Task4();
                     }
                 }
+                //Referenzen
                 else if (code[0] == 'r')
                 {
                     if (code[1] == 'e') Semantik.TaskA();
@@ -108,6 +113,7 @@ namespace AW1
                         else if (code[2] == 'f') Structs.TaskF();
                     }
                 }
+                //Suchen + Sortieren
                 else if (code[0] == 's')
                 {
                     if (code[1] == 'l')
@@ -120,7 +126,18 @@ namespace AW1
                         if (code[2] == 'b') BinarySearch.TaskB();
                         else if (code[2] == 'c') BinarySearch.TaskC();
                     }
+                    //Sortieren
+                    else if (code[1] == 's')
+                    {
+                        if (code[2] == 'b')
+                        {
+                            if (code[3] == 'a') Bubblesort.TaskA();
+                            else if (code[3] == 'b') Bubblesort.TaskB();
+                            else if (code[3] == 'c') Bubblesort.TaskC();
+                        }
+                    }
                 }
+                //Wiederholung
                 else if (code[0] == 'w')
                 {
                     if (code[1] == '4')
