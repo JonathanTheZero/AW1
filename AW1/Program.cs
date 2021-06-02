@@ -146,6 +146,12 @@ namespace AW1
                         else if (code[2] == 'b') Wiederholung0421.TaskB();
                         else if (code[2] == 'c') Wiederholung0421.TaskC();
                     }
+                    else if(code[1] == '6')
+                    {
+                        if (code[2] == 'a') Wiederholung0621.TaskA();
+                        else if (code[2] == 'b') Wiederholung0621.TaskB();
+                        else if (code[2] == 'c') Wiederholung0621.TaskC();
+                    }
                 }
                 Console.WriteLine();
             }
