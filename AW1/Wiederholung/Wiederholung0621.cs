@@ -6,7 +6,7 @@ namespace AW1.Wiederholung
     {
         public static void TaskA()
         {
-            GenerateSeats(5, .20);
+            GenerateSeats(5, .45);
         }
 
         private static bool[,] GenerateSeats(int seed, double percent)
@@ -35,7 +35,7 @@ namespace AW1.Wiederholung
 
         public static void TaskB()
         {
-            bool[,] seats = GenerateSeats(5, .2);
+            bool[,] seats = GenerateSeats(5, .45);
             PrintSeats(seats);
         }
 
@@ -65,7 +65,7 @@ namespace AW1.Wiederholung
 
         public static void TaskC()
         {
-            bool[,] seats = GenerateSeats(5, .2);
+            bool[,] seats = GenerateSeats(5, .45);
             PrintSeats(seats);
             Console.WriteLine("----------------------------");
             Console.WriteLine(FindSeats(seats, 5));
