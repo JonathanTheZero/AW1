@@ -1,66 +1,63 @@
-﻿namespace AW1.OOP
+﻿using AW1.OOP.Model;
+using System;
+using System.Collections.Generic;
+
+namespace AW1.OOP
 {
-    public class Immobilienverwaltung
+    public static class Immobilienverwaltung
     {
-        private string anschrift, heizungsanlage;
-        private int baujahr, grundstücksgröße, wohnfläche, kellerfläche;
-
-        public Immobilienverwaltung(string anschrift, string heizungsanlage, int baujahr, int grundstücksgröße, int wohnfläche, int kellerfläche)
+        public static void TaskC()
         {
-            this.anschrift = anschrift;
-            this.heizungsanlage = heizungsanlage;
-            this.baujahr = baujahr;
-            this.grundstücksgröße = grundstücksgröße;
-            this.wohnfläche = wohnfläche;
-            this.kellerfläche = kellerfläche;
+            Immobilie i = MakeImmobilie();
+            PrintImmobilie(i);
         }
 
-        public int Gesamtgröße()
+        private static Immobilie MakeImmobilie()
         {
-            return wohnfläche + kellerfläche;
+            Console.WriteLine("Anschrift?");
+            string anschrift = Console.ReadLine();
+            Console.WriteLine("Heizungsanlage?");
+            string hz = Console.ReadLine();
+            Console.WriteLine("Baujahr?");
+            int jahr = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Grundstücksgröße?");
+            int gr = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Wohnfläche?");
+            int w = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Kellerfäche?");
+            int k = Convert.ToInt32(Console.ReadLine());
+            return new Immobilie(anschrift, hz, jahr, gr, w, k);
         }
 
-        public string GetAnschrift() => anschrift;
-        public void SetAnschrift(string anschrift)
+        private static void PrintImmobilie(Immobilie i)
         {
-            this.anschrift = anschrift;
+            Console.WriteLine($"Anschrift: {i.GetAnschrift()}");
+            Console.WriteLine($"Heizungsanalge: {i.GetHeizungsanlage()}");
+            Console.WriteLine($"Baujahr: {i.GetBaujahr()}");
+            Console.WriteLine($"Grundstücksgröße: {i.GetGrundstücksgröße()}");
+            Console.WriteLine($"Wohnfläche: {i.GetWohnfläche()}");
+            Console.WriteLine($"Kellerfläche: {i.GetWohnfläche()}");
+            Console.WriteLine($"Gesamtgröße: {i.Gesamtgröße()}");
         }
-        public string GetHeizungsanlage() => heizungsanlage;
-        public void SetHeizungsanlage(string heizungsanlage)
-        {
-            this.heizungsanlage = heizungsanlage;
-        }
-        public int GetBaujahr() => baujahr;
-        public void SetBaujahr(int baujahr)
-        {
-            this.baujahr = baujahr;
-        }
-        public int GetGrundstücksgröße() => grundstücksgröße;
-        public void SetGrundstücksgröße(int grundstücksgröße)
-        {
-            this.grundstücksgröße = grundstücksgröße;
-        }
-        public int GetWohnfläche() => wohnfläche;
-        public void SetWohnfläche(int wohnfläche)
-        {
-            this.wohnfläche = wohnfläche;
-        }
-        public int GetKellerfläche() => kellerfläche;
-        public void SetKellerfläche(int kellerfläche)
-        {
-            this.kellerfläche = kellerfläche;
-        }
-    }
 
-    public class _Immobilienverwaltung
-    {
-        public string Anschrift { get; set; }
-        public string Heizungsanlage { get; set; }
-        public int Baujahr { get; set; }
-        public int Grundstücksgröße { get; set; }
-        public int Wohnfläche { get; set; }
-        public int Kellerfläche { get; set; }
-        public int Gesamtfläche => Kellerfläche + Wohnfläche;
-        public _Immobilienverwaltung() { }
+        public static void TaskD()
+        {
+            List<Immobilie> list = new List<Immobilie>();
+            list.Add(MakeImmobilie());
+            Console.WriteLine("Zum beenden 'exit' eingeben.");
+            while(Console.ReadLine() != "exit")
+            {
+                list.Add(MakeImmobilie());
+                Console.WriteLine("Zum beenden 'exit' eingeben.");
+            }
+
+            Console.WriteLine();
+
+            foreach(Immobilie i in list)
+            {
+                PrintImmobilie(i);
+                Console.WriteLine();
+            }
+        }
     }
 }

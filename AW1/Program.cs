@@ -1,6 +1,7 @@
 ﻿using AW1.Arrays;
 using AW1.Funktionen;
 using AW1.Loops;
+using AW1.OOP;
 using AW1.Referenzen;
 using AW1.Sortieren;
 using AW1.Suchen;
@@ -157,6 +158,15 @@ namespace AW1
                     {
                         if (code[2] == 'b') Password.TaskB();
                         else if (code[2] == 'c') Password.TaskC();
+                    }
+                }
+                //OOP
+                else if(code[0] == 'o')
+                {
+                    if(code[1] == 'i')
+                    {
+                        if (code[2] == 'c') Immobilienverwaltung.TaskC();
+                        else if (code[2] == 'd') Immobilienverwaltung.TaskD();
                     }
                 }
                 Console.WriteLine();

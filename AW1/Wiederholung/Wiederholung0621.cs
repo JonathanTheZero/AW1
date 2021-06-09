@@ -18,18 +18,21 @@ namespace AW1.Wiederholung
             {
                 for (int j = 0; j < seats.GetLength(1); ++j)
                 {
-                    seats[i, j] = Convert.ToBoolean(rnd.Next(2));
+                    //seats[i, j] = Convert.ToBoolean(rnd.Next(2));
+                    //if (seats[i, j])
+                    //    count++;
+
+                    //if (percent <= ((double)count / seats.Length))
+                    //{
+                    //    Console.WriteLine(count);
+                    //    return seats;
+                    //}
+                    seats[i, j] = rnd.NextDouble() <= percent;
                     if (seats[i, j])
                         count++;
-
-                    if (percent <= ((double)count / seats.Length))
-                    {
-                        Console.WriteLine(count);
-                        return seats;
-                    }
                 }
             }
-
+            Console.WriteLine(count);
             return seats;
         }
 
@@ -72,7 +75,7 @@ namespace AW1.Wiederholung
             Console.WriteLine("----------------------------");
             PrintSeats(seats);
             Console.WriteLine("----------------------------");
-            Console.WriteLine(FindSeats(seats, 5, 3));
+            Console.WriteLine(FindSeats(seats, 3, 8));
             Console.WriteLine("----------------------------");
             PrintSeats(seats);
         }
