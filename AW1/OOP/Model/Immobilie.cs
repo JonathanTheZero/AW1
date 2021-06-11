@@ -15,10 +15,7 @@
             this.kellerfläche = kellerfläche;
         }
 
-        public int Gesamtgröße()
-        {
-            return wohnfläche + kellerfläche;
-        }
+        public int Gesamtgröße() => wohnfläche + kellerfläche;
 
         public string GetAnschrift() => anschrift;
         public void SetAnschrift(string anschrift)
@@ -54,10 +51,16 @@
 
     public class _Immobilie
     {
+        private int grundstücksgröße;
+
         public string Anschrift { get; set; }
         public string Heizungsanlage { get; set; }
         public int Baujahr { get; set; }
-        public int Grundstücksgröße { get; set; }
+        public int Grundstücksgröße
+        {
+            get => grundstücksgröße;
+            set => grundstücksgröße = value;
+        }
         public int Wohnfläche { get; set; }
         public int Kellerfläche { get; set; }
         public int Gesamtfläche => Kellerfläche + Wohnfläche;

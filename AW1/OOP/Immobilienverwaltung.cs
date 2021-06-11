@@ -42,10 +42,13 @@ namespace AW1.OOP
 
         public static void TaskD()
         {
-            List<Immobilie> list = new List<Immobilie>();
-            list.Add(MakeImmobilie());
+            List<Immobilie> list = new List<Immobilie>
+            {
+                MakeImmobilie()
+            };
+
             Console.WriteLine("Zum beenden 'exit' eingeben.");
-            while(Console.ReadLine() != "exit")
+            while (Console.ReadLine() != "exit")
             {
                 list.Add(MakeImmobilie());
                 Console.WriteLine("Zum beenden 'exit' eingeben.");
@@ -53,7 +56,7 @@ namespace AW1.OOP
 
             Console.WriteLine();
 
-            foreach(Immobilie i in list)
+            foreach (Immobilie i in list)
             {
                 PrintImmobilie(i);
                 Console.WriteLine();
