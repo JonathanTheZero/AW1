@@ -7,6 +7,7 @@ using AW1.Sortieren;
 using AW1.Suchen;
 using AW1.Wiederholung;
 using AW1.Wiederholung.Experten;
+using AW1.Vererbung;
 using System;
 
 namespace AW1
@@ -167,6 +168,13 @@ namespace AW1
                     {
                         if (code[2] == 'c') Immobilienverwaltung.TaskC();
                         else if (code[2] == 'd') Immobilienverwaltung.TaskD();
+                    }
+                }
+                else if(code[0] == 'v')
+                {
+                    if(code[1] == 'v')
+                    {
+                        if (code[2] == 'a') Vererbung.Vererbung.TaskA();
                     }
                 }
                 Console.WriteLine();
