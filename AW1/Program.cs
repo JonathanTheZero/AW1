@@ -5,9 +5,9 @@ using AW1.OOP;
 using AW1.Referenzen;
 using AW1.Sortieren;
 using AW1.Suchen;
+using AW1.Vererbung;
 using AW1.Wiederholung;
 using AW1.Wiederholung.Experten;
-using AW1.Vererbung;
 using System;
 
 namespace AW1
@@ -149,7 +149,7 @@ namespace AW1
                         else if (code[2] == 'b') Wiederholung0421.TaskB();
                         else if (code[2] == 'c') Wiederholung0421.TaskC();
                     }
-                    else if(code[1] == '6')
+                    else if (code[1] == '6')
                     {
                         if (code[2] == 'a') Wiederholung0621.TaskA();
                         else if (code[2] == 'b') Wiederholung0621.TaskB();
@@ -162,19 +162,23 @@ namespace AW1
                     }
                 }
                 //OOP
-                else if(code[0] == 'o')
+                else if (code[0] == 'o')
                 {
-                    if(code[1] == 'i')
+                    if (code[1] == 'i')
                     {
                         if (code[2] == 'c') Immobilienverwaltung.TaskC();
                         else if (code[2] == 'd') Immobilienverwaltung.TaskD();
                     }
                 }
-                else if(code[0] == 'v')
+                else if (code[0] == 'v')
                 {
-                    if(code[1] == 'v')
+                    if (code[1] == 'v')
                     {
                         if (code[2] == 'a') Vererbung.Vererbung.TaskA();
+                    }
+                    else if(code[1] == 'p')
+                    {
+                        if(code[2] == 'a') PersonenVerwaltung.TaskA();
                     }
                 }
                 Console.WriteLine();
