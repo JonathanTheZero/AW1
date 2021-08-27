@@ -176,9 +176,9 @@ namespace AW1
                     {
                         if (code[2] == 'a') Vererbung.Vererbung.TaskA();
                     }
-                    else if(code[1] == 'p')
+                    else if (code[1] == 'p')
                     {
-                        if(code[2] == 'a') PersonenVerwaltung.TaskA();
+                        if (code[2] == 'a') PersonenVerwaltung.TaskA();
                     }
                 }
                 Console.WriteLine();

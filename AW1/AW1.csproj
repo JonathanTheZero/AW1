@@ -56,10 +56,14 @@
     <Compile Include="Suchen\BinarySearch.cs" />
     <Compile Include="Suchen\LinearSearch.cs" />
     <Compile Include="Vererbung\Model\BaseExample.cs" />
+    <Compile Include="Vererbung\Model\Buch.cs" />
+    <Compile Include="Vererbung\Model\CD.cs" />
     <Compile Include="Vererbung\Model\DerivedExample.cs" />
     <Compile Include="Vererbung\Model\Kunde.cs" />
     <Compile Include="Vererbung\Model\Mitarbeiter.cs" />
     <Compile Include="Vererbung\Model\Person.cs" />
+    <Compile Include="Vererbung\Model\Produkt.cs" />
+    <Compile Include="Vererbung\Onlineshop.cs" />
     <Compile Include="Vererbung\PersonenVerwaltung.cs" />
     <Compile Include="Vererbung\Vererbung.cs" />
     <Compile Include="Wiederholung\Experten\Model\Kurs.cs" />
