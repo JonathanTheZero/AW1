@@ -19,7 +19,7 @@ namespace AW1.Vererbung.Model
         }
         public override string ToString()
         {
-            return base.ToString() + $"ISBN: {ISBN}\nVerlag: {Verlag}\nSeitenzahl: {Seitenzahl}";
+            return base.ToString() + $"ISBN: {ISBN}\nVerlag: {Verlag}\nSeitenzahl: {Seitenzahl} Seiten";
         }
     }
 }

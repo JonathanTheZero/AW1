@@ -20,7 +20,7 @@ namespace AW1.Vererbung.Model
 
         public override string ToString()
         {
-            return base.ToString() + $"Hersteller: {Hersteller}\nGenre {Genre}\nDauer: {Dauer}";
+            return base.ToString() + $"Hersteller: {Hersteller}\nGenre {Genre}\nDauer: {Dauer} Minuten";
         }
     }
 }

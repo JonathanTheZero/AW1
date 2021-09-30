@@ -180,6 +180,11 @@ namespace AW1
                     {
                         if (code[2] == 'a') PersonenVerwaltung.TaskA();
                     }
+                    else if(code[1] == 'o')
+                    {
+                        if (code[2] == 'c') Onlineshop.TaskC();
+                        else if (code[2] == 'd') Onlineshop.TaskD();
+                    }
                 }
                 Console.WriteLine();
             }

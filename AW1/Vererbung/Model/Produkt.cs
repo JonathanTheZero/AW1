@@ -14,7 +14,7 @@
 
         public override string ToString()
         {
-            return $"ID: {ID}\nPreis: {Preis}\nBeschreibung: {Beschreibung}\n";
+            return $"ID: {ID}\nPreis: {Preis}€\nBeschreibung: {Beschreibung}\n";
         }
     }
 }
