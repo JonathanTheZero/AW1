@@ -1,4 +1,5 @@
 ﻿using AW1.Arrays;
+using AW1.Beziehungen;
 using AW1.Funktionen;
 using AW1.Loops;
 using AW1.OOP;
@@ -170,6 +171,7 @@ namespace AW1
                         else if (code[2] == 'd') Immobilienverwaltung.TaskD();
                     }
                 }
+                //Vererbung
                 else if (code[0] == 'v')
                 {
                     if (code[1] == 'v')
@@ -180,10 +182,19 @@ namespace AW1
                     {
                         if (code[2] == 'a') PersonenVerwaltung.TaskA();
                     }
-                    else if(code[1] == 'o')
+                    else if (code[1] == 'o')
                     {
                         if (code[2] == 'c') Onlineshop.TaskC();
                         else if (code[2] == 'd') Onlineshop.TaskD();
+                    }
+                }
+                //Beziehungen
+                else if (code[0] == 'b')
+                {
+                    if (code[1] == 'k')
+                    {
+                        if (code[2] == 'c') Konto.TaskC();
+                        else if (code[2] == 'd') Konto.TaskD();
                     }
                 }
                 Console.WriteLine();

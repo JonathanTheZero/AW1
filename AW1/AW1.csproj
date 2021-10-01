@@ -45,6 +45,9 @@
   <ItemGroup>
     <Compile Include="Arrays\AB5.cs" />
     <Compile Include="Arrays\AM MD arrays.cs" />
+    <Compile Include="Beziehungen\Konto.cs" />
+    <Compile Include="Beziehungen\Model\Girokonto.cs" />
+    <Compile Include="Beziehungen\Model\Kunde.cs" />
     <Compile Include="Funktionen\ABFunktionen.cs" />
     <Compile Include="Funktionen\Fakultät.cs" />
     <Compile Include="Funktionen\Recursive.cs" />
