@@ -29,10 +29,10 @@ namespace AW1.Vererbung
                 new Buch(3, 12.99m, "Der Herr der Ringe", "100023423", "Tolkien Verlag", 367),
                 new Buch(4, 24.99m, "Die Bibel", "666666666", "Päpstlicher Verlag", 1200),
                 new CD(5, 13.99m, "Sepultura - Quadra", "Nuclear Blast Records", "Death/Thrash Metal", 72),
-                new CD(6, 12.99m, "Die drei ??? und der Jadekönig", "Europa", "Hörspiel", 75)
+                new CD(6, 12.99m, "Die drei ??? und der Jadekönig", "Europa", "Hörspiel", 75),
+                new Buch(7, 7.99m, "Die schönsten Rezepte für zuhause", "3412300093", "Chefkoch", 140)
             };
             return list;
-
         }
 
         public static void TaskD()
@@ -50,6 +50,15 @@ namespace AW1.Vererbung
 
         private static List<Produkt> FilterForCDsOver70Mins(List<Produkt> p)
         {
+            //List<Produkt> list = new List<Produkt>();
+            //foreach (Produkt element in p)
+            //{
+            //    if (element is CD cd && cd.Dauer > 70)
+            //    {
+            //        list.Add(cd);
+            //    }
+            //}
+            //return list;
             return p.Where(e => e is CD cd && cd.Dauer > 70).ToList();
         }
     }
