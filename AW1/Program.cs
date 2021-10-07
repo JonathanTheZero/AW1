@@ -196,6 +196,10 @@ namespace AW1
                         if (code[2] == 'c') Konto.TaskC();
                         else if (code[2] == 'd') Konto.TaskD();
                     }
+                    else if (code[1] == 'l')
+                    {
+                        if (code[2] == 'b') Lager.TaskB();
+                    }
                 }
                 Console.WriteLine();
             }
