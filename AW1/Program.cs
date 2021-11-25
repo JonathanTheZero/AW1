@@ -9,12 +9,15 @@ using AW1.Suchen;
 using AW1.Vererbung;
 using AW1.Wiederholung;
 using AW1.Wiederholung.Experten;
+using AW1GUI;
 using System;
+using System.Windows;
 
 namespace AW1
 {
-    class Program
+    public class Program
     {
+        [STAThread]
         public static void Main(string[] args)
         {
             EnhancedMenu();
@@ -200,6 +203,12 @@ namespace AW1
                     {
                         if (code[2] == 'b') Lager.TaskB();
                     }
+                }
+                else if (code[0] == 'g')
+                {
+                    var application = new Application();
+                    application.Run(new MainWindow());
+                    return;
                 }
                 Console.WriteLine();
             }
