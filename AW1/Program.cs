@@ -1,6 +1,7 @@
 ﻿using AW1.Arrays;
 using AW1.Beziehungen;
 using AW1.Funktionen;
+using AW1.Interfaces;
 using AW1.Loops;
 using AW1.OOP;
 using AW1.Referenzen;
@@ -204,11 +205,22 @@ namespace AW1
                         if (code[2] == 'b') Lager.TaskB();
                     }
                 }
+                //gui
                 else if (code[0] == 'g')
                 {
                     var application = new Application();
                     application.Run(new MainWindow());
                     return;
+                }
+                //interfaces
+                else if (code[0] == 'i')
+                {
+                    if (code[1] == 'c')
+                    {
+                        if (code[2] == 'b') CS01.TaskB();
+                        else if (code[2] == 'c') CS01.TaskC();
+                        else if (code[2] == 'd') CS01.TaskD();
+                    }
                 }
                 Console.WriteLine();
             }
