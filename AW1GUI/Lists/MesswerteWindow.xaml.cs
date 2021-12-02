@@ -1,4 +1,5 @@
-﻿using System.Windows;
+﻿using System;
+using System.Windows;
 
 namespace AW1GUI.Lists
 {
@@ -29,7 +30,32 @@ namespace AW1GUI.Lists
 
         private void BtnCount_Click(object sender, RoutedEventArgs e)
         {
-            LbCount.Content = Viewmodel.Data.Count;
+            LbAM.Content = Viewmodel.ArithemtischesMittel;
+            LbMax.Content = Viewmodel.Maximum;
+            LbMin.Content = Viewmodel.Minimum;
+            LbSum.Content = Viewmodel.Summe;
+            LbMod.Content = Viewmodel.Modalwert;
+            LbMed.Content = Viewmodel.Median;
+            LbProd.Content = Viewmodel.Produkt;
+        }
+
+        private void BtnDel_Click(object sender, RoutedEventArgs e)
+        {
+            Viewmodel.Data.Clear();
+            LbAM.Content = string.Empty;
+            LbMax.Content = string.Empty;
+            LbMin.Content = string.Empty;
+            LbSum.Content = string.Empty;
+            LbMod.Content = string.Empty;
+            LbMed.Content = string.Empty;
+            LbProd.Content = string.Empty;
+            UpdateView();
+        }
+
+        private void UpdateView()
+        {
+            DataContext = null;
+            DataContext = Viewmodel;
         }
     }
 }

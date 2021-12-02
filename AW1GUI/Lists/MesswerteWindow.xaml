@@ -16,7 +16,7 @@
             <ColumnDefinition />
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
-            <RowDefinition />
+            <RowDefinition Height="50" />
             <RowDefinition />
             <RowDefinition />
         </Grid.RowDefinitions>
@@ -35,8 +35,16 @@
                 Name="BtnAdd"
                 Width="60"
                 Height="30"
+                Margin="5"
                 Click="BtnAdd_Click"
                 Content="Add" />
+            <Button
+                x:Name="BtnDel"
+                Width="60"
+                Height="30"
+                Margin="5"
+                Click="BtnDel_Click"
+                Content="Reset" />
         </StackPanel>
 
         <StackPanel
@@ -44,13 +52,39 @@
             Grid.Column="2"
             HorizontalAlignment="Center"
             Orientation="Horizontal">
-            <Label Name="LbCount" />
             <Button
                 x:Name="BtnCount"
-                Width="60"
+                Width="100"
                 Height="30"
                 Click="BtnCount_Click"
-                Content="Count" />
+                Content="Daten ausgeben" />
         </StackPanel>
+
+        <Grid Grid.Row="2" Grid.Column="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition />
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+
+            <StackPanel Grid.Column="0">
+                <Label Content="ArithemtischesMittel: " />
+                <Label Content="Minimum: " />
+                <Label Content="Maximum: " />
+                <Label Content="Median: " />
+                <Label Content="Summe: " />
+                <Label Content="Modalwert: " />
+                <Label Content="Produkt: " />
+            </StackPanel>
+
+            <StackPanel Grid.Column="1">
+                <Label Name="LbAM" />
+                <Label Name="LbMin" />
+                <Label Name="LbMax" />
+                <Label Name="LbMed" />
+                <Label Name="LbSum" />
+                <Label Name="LbMod" />
+                <Label Name="LbProd" />
+            </StackPanel>
+        </Grid>
     </Grid>
 </Window>
