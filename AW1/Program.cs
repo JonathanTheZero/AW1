@@ -221,6 +221,11 @@ namespace AW1
                         else if (code[2] == 'c') CS01.TaskC();
                         else if (code[2] == 'd') CS01.TaskD();
                     }
+                    else if (code[1] == 'u')
+                    {
+                        if (code[2] == 'c') UBInterfaces.TaskC();
+                        else if (code[2] == 'd') UBInterfaces.TaskD();
+                    }
                 }
                 Console.WriteLine();
             }
