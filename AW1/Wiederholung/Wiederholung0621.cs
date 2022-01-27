@@ -18,6 +18,7 @@ namespace AW1.Wiederholung
             {
                 for (int j = 0; j < seats.GetLength(1); ++j)
                 {
+                    #region comment
                     //seats[i, j] = Convert.ToBoolean(rnd.Next(2));
                     //if (seats[i, j])
                     //    count++;
@@ -27,6 +28,7 @@ namespace AW1.Wiederholung
                     //    Console.WriteLine(count);
                     //    return seats;
                     //}
+                    #endregion
                     seats[i, j] = rnd.NextDouble() <= percent;
                     if (seats[i, j])
                         count++;
