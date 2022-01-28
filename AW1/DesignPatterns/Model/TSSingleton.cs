@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace AW1.DesignPatterns.Model
+﻿namespace AW1.DesignPatterns.Model
 {
     //Thread Safe Singleton
     public sealed class TSSingleton
@@ -34,20 +28,10 @@ namespace AW1.DesignPatterns.Model
 
         // Explicit static constructor to tell C# compiler
         // not to mark type as beforefieldinit
-        static TSSingleton2()
-        {
-        }
+        static TSSingleton2() { }
 
-        private TSSingleton2()
-        {
-        }
+        private TSSingleton2() { }
 
-        public static TSSingleton2 Instance
-        {
-            get
-            {
-                return instance;
-            }
-        }
+        public static TSSingleton2 Instance => instance;
     }
 }
