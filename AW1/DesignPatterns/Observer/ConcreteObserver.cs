@@ -1,4 +1,6 @@
-﻿namespace AW1.DesignPatterns.Observer
+﻿using System;
+
+namespace AW1.DesignPatterns.Observer
 {
     public class ConcreteObserver : IObserver
     {
@@ -7,6 +9,7 @@
         {
             if (subject is ConcreteSubject conc)
             {
+                Console.WriteLine("ConcreteObserver: Reacted to the event.");
                 ObserverState = conc.SubjectState;
             }
         }

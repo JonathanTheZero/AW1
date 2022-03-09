@@ -58,6 +58,7 @@
     <Compile Include="DesignPatterns\AbstractFactory\IAbstractFactory.cs" />
     <Compile Include="DesignPatterns\AbstractFactory\ProductA.cs" />
     <Compile Include="DesignPatterns\AbstractFactory\ProductB.cs" />
+    <Compile Include="DesignPatterns\DesignPattern.cs" />
     <Compile Include="DesignPatterns\Observer\ConcreteObserver.cs" />
     <Compile Include="DesignPatterns\Observer\ConcreteSubject.cs" />
     <Compile Include="DesignPatterns\Observer\IObserver.cs" />

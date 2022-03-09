@@ -1,5 +1,6 @@
 ﻿using AW1.Arrays;
 using AW1.Beziehungen;
+using AW1.DesignPatterns;
 using AW1.Funktionen;
 using AW1.Interfaces;
 using AW1.Loops;
@@ -225,6 +226,14 @@ namespace AW1
                     {
                         if (code[2] == 'c') UBInterfaces.TaskC();
                         else if (code[2] == 'd') UBInterfaces.TaskD();
+                    }
+                }
+                //design patterns
+                else if (code[0] == 'd')
+                {
+                    if (code[1] == 'o')
+                    {
+                        DesignPattern.ObserverSubject();
                     }
                 }
                 Console.WriteLine();
