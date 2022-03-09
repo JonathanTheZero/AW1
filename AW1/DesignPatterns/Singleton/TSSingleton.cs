@@ -1,4 +1,4 @@
-﻿namespace AW1.DesignPatterns.Model
+﻿namespace AW1.DesignPatterns.Singleton
 {
     //Thread Safe Singleton
     public sealed class TSSingleton

@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace AW1.DesignPatterns.Model
+namespace AW1.DesignPatterns.Observer
 {
     public class ConcreteSubject : ISubject
     {
@@ -23,5 +23,11 @@ namespace AW1.DesignPatterns.Model
                 o.Update(this);
             }
         }
+    }
+
+    public enum State : int
+    {
+        Default = 0,
+        Changed = 1
     }
 }

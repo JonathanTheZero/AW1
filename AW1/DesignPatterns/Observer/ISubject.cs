@@ -1,4 +1,4 @@
-﻿namespace AW1.DesignPatterns.Model
+﻿namespace AW1.DesignPatterns.Observer
 {
     public interface ISubject
     {
