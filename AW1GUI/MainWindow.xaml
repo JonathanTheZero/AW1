@@ -21,13 +21,24 @@
             <RowDefinition />
         </Grid.RowDefinitions>
 
-        <Button
-            Name="BtnLists"
+        <StackPanel
             Grid.Row="1"
             Grid.Column="1"
-            Width="80"
-            Height="30"
-            Click="BtnLists_Click"
-            Content="Lists" />
+            VerticalAlignment="Center">
+            <Button
+                Name="BtnLists"
+                Width="80"
+                Height="30"
+                Margin="2"
+                Click="BtnLists_Click"
+                Content="Lists" />
+            <Button
+                x:Name="BtnHelloWorld"
+                Width="80"
+                Height="30"
+                Margin="2"
+                Click="BtnHelloWorld_Click"
+                Content="Hello World" />
+        </StackPanel>
     </Grid>
 </Window>

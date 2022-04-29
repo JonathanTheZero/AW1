@@ -231,10 +231,7 @@ namespace AW1
                 //design patterns
                 else if (code[0] == 'd')
                 {
-                    if (code[1] == 'o')
-                    {
-                        DesignPattern.ObserverSubject();
-                    }
+                    if (code[1] == 'o') DesignPattern.ObserverSubject();
                 }
                 Console.WriteLine();
             }
