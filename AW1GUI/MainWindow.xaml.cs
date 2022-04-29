@@ -24,6 +24,13 @@ namespace AW1GUI
         private void BtnHelloWorld_Click(object sender, RoutedEventArgs e)
         {
             MessageBox.Show("Clicked", "Info", MessageBoxButton.OK, MessageBoxImage.Information);
+            LbMenu.Content = "Menü (2)";
+        }
+
+        private void BtnImmobilien_Click(object sender, RoutedEventArgs e)
+        {
+            ImmobilienWindow window = new ImmobilienWindow();
+            window.ShowDialog();
         }
     }
 }

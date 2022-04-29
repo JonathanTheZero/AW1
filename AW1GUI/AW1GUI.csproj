@@ -55,6 +55,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Page Include="Lists\ImmobilienWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Lists\MesswerteWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -67,10 +71,15 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Lists\ImmobilienWindow.xaml.cs">
+      <DependentUpon>ImmobilienWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Lists\ImmobilienWindowViewmodel.cs" />
     <Compile Include="Lists\MesswerteWindow.xaml.cs">
       <DependentUpon>MesswerteWindow.xaml</DependentUpon>
     </Compile>
     <Compile Include="Lists\MesswerteWindowViewmodel.cs" />
+    <Compile Include="Lists\Model\Immobilie.cs" />
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>

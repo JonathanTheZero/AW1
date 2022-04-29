@@ -21,6 +21,15 @@
             <RowDefinition />
         </Grid.RowDefinitions>
 
+        <Label
+            x:Name="LbMenu"
+            Grid.Row="0"
+            Grid.Column="1"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            Content="Menü"
+            FontSize="24" />
+
         <StackPanel
             Grid.Row="1"
             Grid.Column="1"
@@ -31,7 +40,7 @@
                 Height="30"
                 Margin="2"
                 Click="BtnLists_Click"
-                Content="Lists" />
+                Content="Messwerte" />
             <Button
                 x:Name="BtnHelloWorld"
                 Width="80"
@@ -39,6 +48,13 @@
                 Margin="2"
                 Click="BtnHelloWorld_Click"
                 Content="Hello World" />
+            <Button
+                x:Name="BtnImmobilien"
+                Width="80"
+                Height="30"
+                Margin="2"
+                Click="BtnImmobilien_Click"
+                Content="Immobilien" />
         </StackPanel>
     </Grid>
 </Window>
