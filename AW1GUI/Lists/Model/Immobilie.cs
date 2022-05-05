@@ -12,5 +12,12 @@
         public double Kellerfläche { get; set; }
         public string Heizungsanlage { get; set; }
         public double Gesamtwohnfläche => Wohnfläche + Kellerfläche;
+
+        public override string ToString()
+        {
+            return $"{PLZ} - {Stadt}: {Wohnfläche} m²";
+        }
+
+        public string String => ToString();
     }
 }

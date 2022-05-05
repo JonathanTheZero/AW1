@@ -210,5 +210,10 @@
                 Click="BtnAdd_Click"
                 Content="Hinzufügen" />
         </Grid>
+
+        <ListView
+            Grid.Column="2"
+            DisplayMemberPath="String"
+            ItemsSource="{Binding Immobilien}" />
     </Grid>
 </Window>

@@ -44,6 +44,7 @@ namespace AW1GUI.Lists
                 Wohnfläche = Convert.ToInt32(Wohnfläche)
             };
             Immobilien.Add(immobilie);
+            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(Immobilien)));
         }
     }
 }
